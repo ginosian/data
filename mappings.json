@@ -1,0 +1,49 @@
+PUT /accounts
+{
+ "mappings" : {
+ 
+   "properties" : {
+     
+     
+      "account_number": { "type" : "integer" },
+    "balance": { "type" : "long" },
+    "firstname": { "type" : "text" },
+    "lastname": { "type" : "text" },
+    "age": { "type" : "integer" },
+    "gender": {"type": "keyword" },
+    "address": { "type" : "text" },
+    "employer": { "type" : "text" },
+    "email": {"type": "keyword" },
+    "city": { "type" : "text" },
+    "state": { "type" : "text" }
+    
+   }
+  }
+ 
+}
+
+
+
+PUT /shakespeare
+{
+  "mappings": {
+    "properties": {
+      "speaker": {
+        "type": "keyword"
+      },
+      "play_name": {
+        "type": "keyword"
+      },
+      "line_id": {
+        "type": "integer"
+      },
+      "line_number": {
+        "type": "keyword"
+      },
+      "speech_number": {
+        "type": "integer"
+      },
+      "text_entry": {
+        "type": "text"
+      }
+    }
